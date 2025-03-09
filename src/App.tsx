@@ -1,7 +1,8 @@
 import "./App.css";
+import Routes from "./router";
 
 function App() {
-  return <div className="bg-red-600 text-[32px]">marcos</div>;
+  return <Routes />;
 }
 
 export default App;
