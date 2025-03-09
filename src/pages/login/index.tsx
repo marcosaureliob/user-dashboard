@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import bannerLogin from "../../assets/banner-login.svg";
+import login from "../../assets/login.svg";
 
 export default function Login() {
   return (
     <div className=" flex items-center justify-center h-screen">
       <div className="flex items-center justify-center gap-32 bg-gray-50 p-10 rounded-2xl">
         <div>
-          <img src={bannerLogin} className="h-[700px]" />
+          <img src={login} className="h-[700px]" />
         </div>
         <div className="flex flex-col gap-10 items-center ">
           <div className="flex flex-col items-center gap-4">
@@ -18,11 +18,11 @@ export default function Login() {
           <div className="flex flex-col gap-6">
             <input
               placeholder="Email"
-              className="w-72 h-10 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none"
+              className="w-72 h-12 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none"
             />
             <input
               placeholder="Password"
-              className="w-72 h-10 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none "
+              className="w-72 h-12 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none "
             />
             <div className="flex gap-2 items-center">
               <input type="checkbox" className="w-4 h-4" />
@@ -31,13 +31,18 @@ export default function Login() {
               </span>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center justify-center">
             <button className="bg-blue-500 rounded-xl w-72 h-10 text-white font-semibold cursor-pointer">
               Login
             </button>
-            <button className="rounded-xl w-72 h-10 text-blue-500 font-semibold cursor-pointer">
-              Forgot password?
-            </button>
+            <div>
+              <Link
+                to="forgot-password"
+                className="rounded-xl w-72 h-10 text-blue-500 font-semibold cursor-pointer"
+              >
+                Forgot password?
+              </Link>
+            </div>
           </div>
 
           <div className="flex gap-1 items-center">
