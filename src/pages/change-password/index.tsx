@@ -11,16 +11,17 @@ export default function ChangePassword() {
         <div className="flex flex-col gap-10 items-center ">
           <div className="flex flex-col items-center gap-4">
             <h1 className="text-gray-800 text-4xl font-semibold">
-              Forgot password?
+              Reset password?
             </h1>
-            <p className="text-gray-600 text-base font-light text-center">
-              Don’t worry! It’s happens. Please enter the email address <br />
-              associated with your account.
-            </p>
           </div>
           <div className="flex flex-col gap-8 items-center">
             <input
-              placeholder="Insert email address / mobile number"
+              placeholder="Confirm new password"
+              className="w-72 h-12 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none"
+            />
+
+            <input
+              placeholder="Confirm new password"
               className="w-72 h-12 border border-blue-100 rounded-lg p-2 focus-visible:border-blue-300 focus:outline-none"
             />
 
