@@ -43,7 +43,7 @@ export default function SignUp() {
                   I agree to Platform
                 </span>
                 <Link
-                  to="/"
+                  to="/terms"
                   className="text-blue-500 text-sm font-light  cursor-pointer"
                 >
                   Terms of Service
