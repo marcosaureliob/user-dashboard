@@ -48,12 +48,11 @@ export default function Login() {
             </div>
 
             <div className="flex flex-col gap-4 items-center justify-center">
-              <button
-                type="submit"
-                className="bg-blue-500 rounded-xl w-72 h-10 text-white font-semibold cursor-pointer"
-              >
-                Login
-              </button>
+              <Link to="/dashboard">
+                <button className="bg-blue-500 rounded-xl w-72 h-10 text-white font-semibold cursor-pointer">
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
 
