@@ -65,17 +65,53 @@ export default function Dashboard() {
         <div className="text-3xl font-semibold text-slate-700 ">
           All Customers
         </div>
-        <table>
-          <tr className="flex gap-14">
-            <th className="text-md text-slate-500 font-medium">
-              Costumer Name
-            </th>
-            <th className="text-md text-slate-500 font-medium">Company</th>
-            <th className="text-md text-slate-500 font-medium">Phone number</th>
-            <th className="text-md text-slate-500 font-medium">Email</th>
-            <th className="text-md text-slate-500 font-medium">Country</th>
-            <th className="text-md text-slate-500 font-medium">Status</th>
-          </tr>
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-gray-100">
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Customer Name
+              </th>
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Company
+              </th>
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Phone number
+              </th>
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Email
+              </th>
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Country
+              </th>
+              <th className="text-md text-slate-500 font-medium px-4 py-2">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b">
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                John Doe
+              </td>
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                Acme Corp
+              </td>
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                +1 234 567 890
+              </td>
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                john@example.com
+              </td>
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                USA
+              </td>
+              <td className="text-md text-slate-600 font-medium px-4 py-2 text-left">
+                <span className="px-3 py-1 text-xs font-semibold text-green-700 bg-green-200 rounded-full">
+                  Active
+                </span>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
